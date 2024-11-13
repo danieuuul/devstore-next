@@ -1,7 +1,9 @@
 'use client'
+
 import { Skeleton } from '@/components/skeleton'
 import { useSearchParams } from 'next/navigation'
-export default function SearchLoading() {
+
+export function SearchLoading() {
   const searchParams = useSearchParams()
   const query = searchParams.get('q')
   return (
